@@ -1,0 +1,91 @@
+:root {
+    --body-background-clr: white;
+    --p-clr: #7D7987;
+    --top-bar-clr: #1F1534;
+    --a-font-size: 18px;
+    --font-weight-300: 300;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+    --line-height-p: 32px;
+    --title-clr: #000000
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: var(--body-background-clr);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container-header {
+    width: 1490px;
+    margin: auto;
+}
+
+.mr-40 {
+    margin-right: 40px;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.mb-45 {
+    margin-bottom: 45px;
+}
+
+.mt-192 {
+    margin-top: 192px;
+}
+
+.mb-220 {
+    margin-bottom: 220px;
+}
+
+.mt-33 {
+    margin-top: 33px;
+}

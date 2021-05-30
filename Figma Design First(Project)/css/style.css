@@ -1,0 +1,170 @@
+    @import "main.css";
+    .logo {
+        width: 160px;
+        height: 41px;
+    }
+    
+    .nav-item .active {
+        color: rgba(31, 21, 52, 1);
+        opacity: 1;
+        font-weight: var(--font-weight-700);
+    }
+    
+    .nav-item a {
+        color: var(--top-bar-clr);
+        opacity: 0.5;
+        font-size: var(--a-font-size);
+        font-weight: var(--font-weight-400);
+    }
+    
+    .top-bar {
+        padding: 70px 192px;
+    }
+    
+    .element {
+        width: 131.58px;
+        height: 115px;
+        top: 160px;
+        left: 0;
+    }
+    
+    .container-content {
+        width: 1247px;
+    }
+    
+    .content-left {
+        width: 445px;
+        height: 338px;
+        top: 283px;
+        left: 190px;
+    }
+    
+    .content-right {
+        height: 598px;
+        width: 693px;
+        left: 744px;
+        top: 177px;
+    }
+    
+    .title {
+        font-weight: var(--font-weight-700);
+        color: var(--title-clr);
+        font-size: 48px;
+        line-height: 56px;
+    }
+    
+    .content-desc {
+        line-height: var(--line-height-p);
+        font-size: 21px;
+        font-weight: var(--font-weight-300);
+    }
+    
+    .btn {
+        font-size: var(--a-font-size);
+        padding: 10px 40px;
+        border-radius: 55px;
+        line-height: 60px;
+        font-weight: var(--font-weight-700);
+    }
+    
+    .btn-header {
+        background: #458FF6;
+        color: white;
+    }
+    
+    #services {
+        width: 1675.58px;
+        height: 1133px;
+        margin-top: 190px;
+        margin-bottom: 220px;
+    }
+    
+    .services-header {
+        width: 952px;
+        height: 177px;
+        left: 323px;
+        top: 967px;
+    }
+    
+    .services-header h1 {
+        font-size: 36px;
+    }
+    
+    .services-header h1::after {
+        content: "";
+        position: absolute;
+        width: 56px;
+        height: 2px;
+        right: 47%;
+        top: 42px;
+        background: #000000;
+        border-radius: 5px;
+        margin-top: 26px;
+    }
+    
+    .services-vector {
+        height: 671.3px;
+        width: 937.96px;
+        left: -20.42px;
+        top: 965px;
+    }
+    
+    .container-services {
+        width: 1120px;
+        height: 745px;
+        left: 240px;
+        top: 1224px;
+    }
+    
+    .container-services-bottom {
+        width: 1120px;
+        height: 745px;
+        left: 240px;
+        top: 1615px;
+    }
+    
+    .service-item {
+        height: 354px;
+        width: 350px;
+        left: 240px;
+        top: 1224px;
+        border-radius: 20px;
+        padding: 54px 37px;
+        background-color: white;
+        box-shadow: 10px 40px 50px 0px #E5E9F666;
+        margin-right: 34px;
+    }
+    
+    .item-title {
+        margin-top: 22px;
+        font-size: 24px;
+    }
+    
+    .service-item p {
+        line-height: 28px;
+    }
+    
+    .service-item-bottom {
+        height: 354px;
+        width: 350px;
+        left: 240px;
+        top: 1615px;
+        border-radius: 20px;
+        padding: 54px 37px;
+        background-color: white;
+        box-shadow: 10px 40px 50px 0px #E5E9F666;
+        margin-right: 34px;
+    }
+    
+    .service-button {
+        height: 56px;
+        width: 200px;
+        left: 41%;
+        top: 450px;
+        border-radius: 55px;
+    }
+    
+    .btn-service {
+        border: 1.4px solid #458FF6;
+        color: #458FF6;
+    }
