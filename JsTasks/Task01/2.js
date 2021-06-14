@@ -1,8 +1,8 @@
 // Dəyərin boş olub olmadığını yoxlayan metod yazın
-let a = prompt();
+let enteredValue = prompt();
 
-if(a === ""){
-  console.log("ici bosdur ")
-}else if(a) {
-  console.log("ici bos deyil")
+if (enteredValue === "") {
+    console.log("ici bosdur ")
+} else if (enteredValue) {
+    console.log("ici bos deyil")
 }

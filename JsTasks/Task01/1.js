@@ -1,5 +1,5 @@
 // Dəyərin tipini ekrana çap edin
 
-let a = prompt();
+let enteredValue = prompt();
 
-console.log(typeof(a));
+console.log(typeof(enteredValue));
