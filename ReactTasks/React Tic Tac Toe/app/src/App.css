@@ -1,0 +1,46 @@
+.board {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    /* grid-gap: 5px; */
+    background-color: #fff;
+    /*    border: 15px solid #cfc8b8; */
+    /*  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75); */
+}
+
+.square {
+    text-align: center;
+    font-size: 50px;
+    cursor: pointer;
+    box-shadow: none;
+    border: 4px solid #cfc8b8;
+    color: #6b948c;
+    background-color: transparent;
+    transition: all 0.5s ease;
+}
+
+.square:active {
+    background-color: #524a4c;
+    color: #cfc8b8;
+}
+
+.square:hover {
+    background-color: #e6e2da;
+}
+
+.reset-btn {
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 5px;
+    padding: 10px;
+    color: #6b948c;
+    background: transparent;
+    border: 4px solid #cfc8b8;
+}
+
+.title {
+    text-align: center;
+    color: #6b948c;
+}
