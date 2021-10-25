@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLocation, useHistory } from 'react-router'
-import { useState, useEffect, } from 'react'
+import { useState, useEffect } from 'react'
 
 const RegisterStep3 = () => {
 

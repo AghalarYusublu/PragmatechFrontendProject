@@ -412,7 +412,7 @@ const Home = () => {
                     <div className="slider-wrapper" >
                         <div style={{ transform: `translateX(${index}px)` }} className="slides d-flex" ref={slides}>
                             {banner.map(b =>
-                                <BannerCarousel key={shortid.generate()} title={b.title} date={b.date} desc={b.desc} imgSrc={b.imgSrc} starring={b.starring} genre={b.genre}>
+                                <BannerCarousel key={shortid.generate()} {...b}>
                                 </BannerCarousel>)}
                         </div>
                     </div>

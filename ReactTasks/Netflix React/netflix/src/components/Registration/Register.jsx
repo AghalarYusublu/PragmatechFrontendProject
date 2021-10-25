@@ -1,11 +1,11 @@
 import React from 'react'
 import img from '../../images/download.png'
 
-import { useLocation, useHistory } from 'react-router'
+import { useHistory } from 'react-router'
 
 const Register = () => {
     let router = useHistory()
-    let location = useLocation()
+
     return <>
         <div id='register-section' >
             <div className="container">
@@ -20,11 +20,11 @@ const Register = () => {
                         your free month ends.
                     </p>
                     {
-                        !(location.pathname === '/registerStep-2') ? <button className='btn-step' onClick={() => {
+                        <button className='btn-step' onClick={() => {
                             router.push({
                                 pathname: "/registerStep-2",
                             })
-                        }} >SEE THE PLANS</button> : null
+                        }} >SEE THE PLANS</button>
                     }
 
                 </div>

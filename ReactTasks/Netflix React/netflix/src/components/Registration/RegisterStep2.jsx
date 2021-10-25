@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { useHistory, useLocation, } from 'react-router'
+import { useHistory} from 'react-router'
 
 const textStyle = {
     color: "rgb(229, 9, 20)",
@@ -11,9 +11,7 @@ const boxStyle = {
 
 const RegisterStep2 = () => {
     let router = useHistory()
-    let location = useLocation()
-
-
+    
     const [plan, setPlan] = useState()
 
     const basic = 'basic';
@@ -108,7 +106,7 @@ const RegisterStep2 = () => {
                     </div>
                 </div>
                 {
-                    !(location.pathname === '/registerStep-3') ? <button className='btn-step continue' onClick={() => {
+                    <button className='btn-step continue' onClick={() => {
                         if (!plan) {
                             alert("Choose one of the packages")
                             return;
@@ -119,7 +117,7 @@ const RegisterStep2 = () => {
                                 plan
                             }
                         })
-                    }} >Continue</button> : null
+                    }} >Continue</button>
 
                 }
             </div>

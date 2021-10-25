@@ -10,16 +10,16 @@ const slideStyle = {
 
 const PostSlider = ({ categoryname, movies }) => {
 
-
-
     let postNum = movies.length
     const [index, setIndex] = useState(0)
+
+    
     const controlNext = () => {
         if (index !== -((postNum - 1) * slideStyle.width)) {
             setIndex(index - slideStyle.width)
         }
     }
-
+  
     const controlPrev = () => {
         if (index !== 0) {
             setIndex(index + slideStyle.width)
