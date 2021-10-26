@@ -1,6 +1,6 @@
 import React from 'react'
 import Post from './Post'
-import { useState } from 'react'
+import { useState, useCallback } from 'react'
 import shortid from "short-id";
 
 
@@ -13,18 +13,18 @@ const PostSlider = ({ categoryname, movies }) => {
     let postNum = movies.length
     const [index, setIndex] = useState(0)
 
-    
-    const controlNext = () => {
+
+    const controlNext = useCallback(() => {
         if (index !== -((postNum - 1) * slideStyle.width)) {
             setIndex(index - slideStyle.width)
         }
-    }
-  
-    const controlPrev = () => {
+    })
+
+    const controlPrev = useCallback(() => {
         if (index !== 0) {
             setIndex(index + slideStyle.width)
         }
-    }
+    })
 
     return <div style={{
         position: "relative"
@@ -35,7 +35,7 @@ const PostSlider = ({ categoryname, movies }) => {
             <p className="post-items-title">{categoryname}</p>
             <div className="post-grid" style={{ transform: `translateX(${index}px)` }} >
                 {movies.map((p) =>
-                    <Post key={shortid.generate()} style={slideStyle} title={p.title} date={p.date} rate={p.rate} imgSrc={p.imgSrc} duration={p.duration} rating={p.rating} stars={p.stars} genre={p.genre} desc={p.desc} imgSrcSingle={p.imgSrcSingle}></Post>)}
+                    <Post key={shortid.generate()} style={slideStyle} {...p}></Post>)}
             </div>
         </div>
 

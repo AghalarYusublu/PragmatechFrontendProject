@@ -17,7 +17,6 @@ import {
   Route,
 } from "react-router-dom";
 
-
 function App() {
   return (
     <>
@@ -32,7 +31,7 @@ function App() {
               <Route path="/register" exact>
                 <Register />
               </Route>
-              <Route path="/singlePost" exact>
+              <Route path="/singlePost/:id" exact>
                 <SinglePost />
               </Route>
               <Route path="/registerStep-2" exact>

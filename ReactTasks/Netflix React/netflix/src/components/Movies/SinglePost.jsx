@@ -1,9 +1,8 @@
 import React from 'react'
-import { useLocation } from 'react-router'
+import { useLocation} from 'react-router'
 
 const SinglePost = () => {
     const location = useLocation()
-
     return <>
         <div className="container">
             {

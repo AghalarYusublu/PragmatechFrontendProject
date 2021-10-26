@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 
-const Post = ({ title, date, rate, duration, rating, desc, stars, genre, imgSrc, slideStyle, imgSrcSingle }) => {
+const Post = ({ id,title, date, rate, duration, rating, desc, stars, genre, imgSrc, slideStyle, imgSrcSingle }) => {
     return <>
         <Link className='post-grid-item' style={slideStyle} to={{
-            pathname: '/singlePost',
+            pathname: `/singlePost/${id}`,
             state: { title, duration, rating, desc, stars, genre, imgSrc, imgSrcSingle }
         }} >
             <div className="post-grid-overlay"></div>

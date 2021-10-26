@@ -10,14 +10,27 @@ body {
     padding: 0 5%;
 }
 
-.register-link {
+.profile .register-link {
     color: #b81d24;
     font-weight: 700;
     font-size: 14px;
     text-decoration: none;
 }
 
-.register-link:hover {
+.profile .register-link:hover {
+    color: #e81e25;
+}
+
+.profile .btn-logout {
+    margin-left: 15px;
+    color: #b81d24;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.profile .btn-logout:hover {
     color: #e81e25;
 }
 
