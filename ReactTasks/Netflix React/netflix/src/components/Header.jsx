@@ -10,7 +10,7 @@ const Header = () => {
 
     const LogOut = useCallback(() => {
         if (profile !== null) {
-            return <span onClick={removeProfile} className="btn-logout">Log Out</span>
+            return <span onClick={removeProfile} className="btn-logout btn">Log Out  <i class="ms-1 fas fa-sign-out-alt"></i></span>
         }
        
     }, [profile])
