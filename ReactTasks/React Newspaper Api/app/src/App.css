@@ -1,0 +1,16 @@
+body {
+    background-color: #282c34;
+    color: white;
+}
+
+p {
+    color: wheat;
+}
+
+.pagination {
+    padding-left: 0;
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
