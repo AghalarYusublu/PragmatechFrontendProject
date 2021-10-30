@@ -31,7 +31,7 @@ const Header = () => {
         <div className='header'>
             <Link to="/"> <img src={logo} alt="" style={{ width: '92px' }} /></Link>
            <div className="profile">
-           <Link to={profile == null ? `/register` : `/`} className='register-link'> {profile == null ? "Register" : `Salam ${profile}`}</Link>
+           <Link to={profile == null ? `/register` : `/`} className='register-link'> {profile == null ? "Register" : `Hello ${profile}`}</Link>
             {LogOut()}
            </div>
         </div>
