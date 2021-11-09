@@ -20,7 +20,7 @@ function App() {
     fetch(`https://chroniclingamerica.loc.gov/search/titles/results/?terms=${terms}&format=json&page=${page}`).then(a => a.json())
       .then((data) => {
         setData(data);
-        setPageCount(data.totalItems / (data.endIndex - data.startIndex));
+        setPageCount(data.totalItems / (data.endIndex - data.startIndex +1));
       }).catch(() => {
         alert("data yoxdur")
       })

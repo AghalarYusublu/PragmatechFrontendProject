@@ -15,7 +15,6 @@ const BannerCarousel = ({ title, date, desc, imgSrc, starring, genre }) => {
                         <i className="far fa-thumbs-down" aria-hidden="true"></i>
                     </div><p className="overview"> Starring : {starring}
                     </p>
-
                     <p className="overview"> Genre : {genre}
                     </p>
                 </div>

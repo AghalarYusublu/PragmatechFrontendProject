@@ -1,6 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState,useContext } from 'react'
 import { useHistory} from 'react-router'
+import { DarkMode } from '../../App';
 
 const textStyle = {
     color: "rgb(229, 9, 20)",
@@ -11,7 +12,7 @@ const boxStyle = {
 
 const RegisterStep2 = () => {
     let router = useHistory()
-    
+    const darkMode = useContext(DarkMode)
     const [plan, setPlan] = useState()
 
     const basic = 'basic';
@@ -23,7 +24,7 @@ const RegisterStep2 = () => {
     }
 
     return <>
-        <section id="register-section">
+        <section id="register-section" style={darkMode.darkMode === false ? { borderColor: "#141414",color: "#141414" } : { borderColor: "hsla(0, 0%, 89.8%, .0784313725490196)",color: "#e5e5e5"  }}>
             <div className="step-items">
                 <p className="steps">STEP <strong>2</strong> OF <strong>3</strong></p>
                 <p className="head-line">Choose a plan that's right for you..</p>

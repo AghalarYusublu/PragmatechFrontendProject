@@ -1,15 +1,17 @@
 import React from 'react'
 import { useLocation, useHistory } from 'react-router'
-import { useState, useEffect } from 'react'
+import { useState, useEffect ,useContext} from 'react'
+import { DarkMode } from '../../App';
 
 const RegisterStep3 = () => {
 
+    const darkMode = useContext(DarkMode)
     let router = useHistory()
     let location = useLocation()
 
     const [firstName, SetFirstName] = useState()
     const [lastName, SetLastName] = useState()
-    const [email, SetEmail] = useState()
+    /* const [email, SetEmail] = useState() */
     const [password, SetPassword] = useState()
 
 
@@ -42,13 +44,13 @@ const RegisterStep3 = () => {
                     plan: location.state.plan
                 },
             })
-            window.localStorage.setItem('firstName',firstName)
+            window.localStorage.setItem('firstName', firstName)
         }
 
     }, [firstName, lastName, password])
     return <>
         <div className="container">
-            <section id="register-section">
+            <section id="register-section" style={darkMode.darkMode === false ? { borderColor: "#141414",color: "#141414" } : { borderColor: "hsla(0, 0%, 89.8%, .0784313725490196)",color: "#e5e5e5"  }}>
                 <div className="step3">
                     <p className="steps">STEP <strong>3</strong> OF <strong>3</strong></p>
                     <p className="head-line">Sign up to start your free month</p>
