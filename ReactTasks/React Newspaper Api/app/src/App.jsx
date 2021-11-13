@@ -1,5 +1,5 @@
 import React from 'react'
-import { useCallback, useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import shortid from "short-id";
 
 import './App.css';
@@ -13,28 +13,25 @@ function App() {
 
 
   const [terms, setTerms] = useState()
-  const [page, setPage] = useState(1)
+
 
 
   useEffect(() => {
     fetch(`https://chroniclingamerica.loc.gov/search/titles/results/?terms=${terms}&format=json&page=${page}`).then(a => a.json())
       .then((data) => {
         setData(data);
-        setPageCount(data.totalItems / (data.endIndex - data.startIndex +1));
+        setPageCount(data.totalItems / (data.endIndex - data.startIndex + 1));
       }).catch(() => {
         alert("data yoxdur")
       })
-  }, [terms, page, pageCount])
+  }, [terms, pageCount])
 
   const Search = (e) => {
     e.preventDefault()
     setTerms(inputValue.current.value)
   }
 
-  const pageNum = []
-  for (let i = 1; i <= pageCount; i++) {
-    pageNum.push(i)
-  }
+
 
   return <>
     <div className="main mt-5">
@@ -52,8 +49,8 @@ function App() {
             <nav aria-label="Page navigation example " className='mt-5 d-flex justify-content-center'>
               <ul class="pagination">
                 {
-                  pageNum.map((num) => { 
-                    return <li key={shortid.generate()} class="page-item"><a class="page-link" href="#" ref={pageLink} onClick={() => setPage(num)}>{num}</a></li>
+                  Array(Math.ceil(pageCount)).fill('').map((num, index) => {
+                    (<li key={shortid.generate()} class="page-item"><a class="page-link" href="#" ref={pageLink} onClick={() => setPage(index + 1)}>{index + 1}</a></li>)
                   })
                 }
               </ul>
@@ -64,7 +61,7 @@ function App() {
           <div className="title">
             <h4>Title</h4>
             {
-              data?.items.map((elem)  => {
+              data?.items.map((elem) => {
                 return <p key={shortid.generate()} >{elem.title}</p>
               })
             }
