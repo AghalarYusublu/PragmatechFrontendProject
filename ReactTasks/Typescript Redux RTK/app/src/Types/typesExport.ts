@@ -1,0 +1,1 @@
+export * from './ageOfEmpiresApi/getDefaultAgeOfEmpires'

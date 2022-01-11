@@ -9,10 +9,12 @@ function App() {
   const inputValue = useRef(null)
   const pageLink = useRef(null)
   const [data, setData] = useState()
+  
   const [pageCount, setPageCount] = useState()
 
-
   const [terms, setTerms] = useState()
+  const [page, setPage] = useState()
+
 
 
 
@@ -24,7 +26,7 @@ function App() {
       }).catch(() => {
         alert("data yoxdur")
       })
-  }, [terms, pageCount])
+  }, [terms, pageCount,page])
 
   const Search = (e) => {
     e.preventDefault()

@@ -25,7 +25,7 @@ function App() {
   return <>
     <Router>
       <div className="App">
-        <div className="container">
+        <div className="">
           <div className="navbar h-20 bg-blue-300 flex justify-center items-center">
           <small className='text-white bg-green-700 rounded-full  py-1 px-2' >{messageP1Count}</small>
 

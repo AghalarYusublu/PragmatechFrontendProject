@@ -1,0 +1,23 @@
+.product__slider .swiper-pagination {
+    text-align: center !important;
+    bottom: -6px !important;
+}
+
+.product__slider .swiper-pagination-bullet {
+    max-width: 150px !important;
+    cursor: none !important;
+    width: 100% !important;
+    height: 1px !important;
+    margin-right: 20px!important;
+    background-color: #4f4f4f !important;
+}
+
+.product__slider .swiper-pagination-bullet-active {
+    max-width: 150px !important;
+    width: 100% !important;
+    background-color: #f4f4f4 !important;
+}
+
+.product__slider .swiper-wrapper {
+    margin-bottom: 80px !important;
+}

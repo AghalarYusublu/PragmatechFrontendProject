@@ -1,0 +1,23 @@
+.banner__wrapper__img::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(transparent, #000);
+}
+
+.blogs__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #f4f4f4;
+    transform: scaleX(1);
+    transform-origin: 0 0;
+    transition: transform .5s ease;
+}
